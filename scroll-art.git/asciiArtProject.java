@@ -1,10 +1,14 @@
-import java.util.Random;
+
+    import java.util.Random;
 public class asciiArtProject {
 
     public static void main(String[] args){
+        for (int l = 0; l <= 10; l ++){
         bird();
         goat();
         initials();
+        System.out.println(' ');
+        }
     }
 
     public static void bird(){
@@ -365,6 +369,7 @@ public class asciiArtProject {
         img[0][0] = '#';
         img[0][1] = '#';
         img[0][2] = '#';
+        img[0][3] = '#';
         img[0][5] = '#';
 
         img[1][0] = '#';
@@ -378,6 +383,7 @@ public class asciiArtProject {
         img[3][0] = '#';
         img[3][1] = '#';
         img[3][2] = '#';
+        img[3][3] = '#';
         img[3][5] = '#';
 
         img[4][0] = '#';
@@ -391,6 +397,7 @@ public class asciiArtProject {
         img[6][0] = '#';
         img[6][1] = '#';
         img[6][2] = '#';
+        img[6][3] = '#';
         img[6][5] = '#';
         img[6][6] = '#';
         img[6][7] = '#';
@@ -404,7 +411,6 @@ public class asciiArtProject {
         }
     }
 }
-    
     
 
 
