@@ -5,13 +5,12 @@ Both Images are creations of my own, though I took inspiration from various imag
 The sketch I made by myself is attached under "sketch.jpg". 
 Note that my final project includes slight modifications from the sketch. 
 
-Goat: 
-Pixel Art - https://www.shutterstock.com/image-vector/pixel-art-illustration-eagle-pixelated-260nw-2379504895.jpg
+Goat: https://www.asciiart.eu/art/398e152523e9291d
+I incorporated elements from Shanaka Dias untitlted artwork. I sent an email to him, please refer to screenshot. 
 
 Eagle: 
-Pixel Art -  https://www.shutterstock.com/image-vector/pixel-art-goat-character-isolated-260nw-1395914615.jpg
-Ascii art - https://asciiart.cc/view/12499
+RANDALL: https://www.asciiart.eu/art/82882e0908185d8e
+I used the composition of Colin J.Randall's "Eagle" (face in the middle and two wings pointing upwards), I sent an email to him, please refer to screenshot. 
 
-
-
-
+STARK: https://www.asciiart.eu/art/5425910757fedaaa
+I also incorporated elements of Stark's "Bat", but unfortunately, she passed away in 2016, so I cannot send an email to ask for her permission. 
