@@ -1,5 +1,4 @@
 
-    import java.util.Random;
 public class asciiArtProject {
 
     public static void main(String[] args){
