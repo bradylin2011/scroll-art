@@ -34,7 +34,7 @@ public class asciiArtProject {
 
         for (int y = 0; y < Rheight; y++){
             for (int x = 0; x < Rwidth; x++){
-                img[y][x] = ' ';                 
+                img[y][x] = ' ';      //fills with empty space           
             }
             char[] charR = rows[y].toCharArray();
             for (int x = 0; x < charR.length; x++){
@@ -42,7 +42,7 @@ public class asciiArtProject {
             }
         }
     }
-     void printImage(){
+     void printImage(){ 
          for (int y = 0; y < Rheight; y++) {
             for (int x = 0; x < Rwidth; x++) {
                 System.out.print(img[y][x]);
