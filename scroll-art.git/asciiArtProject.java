@@ -1,17 +1,69 @@
 
     import java.util.Random;
 public class asciiArtProject {
+    String title;
+    String artist;
+    char[][] img;
+    int Rheight;
+    int Rwidth;
 
-    public static void main(String[] args){
-        for (int l = 0; l <= 10; l ++){
-        bird();
-        goat();
-        initials();
-        System.out.println(' ');
+    //This constructor deals with char arrays
+    asciiArtProject(String title, String artist, char[][] art){
+    this.title = title;
+     this.artist = artist;
+    img = art;
+     Rheight = art.length;
+    Rwidth = art[0].length;
+    }
+    
+
+    //This constructor deals with String arrays, converts them to char. 
+       asciiArtProject(String title, String artist, String art){
+        this.title = title;
+        this.artist = artist;
+        String[] rows = art.split("\n");
+        Rheight = rows.length;
+        Rwidth = rows[0].length();
+
+        for (int y = 1; y < Rheight; y++){
+            if (rows[y].length() > Rwidth){
+                Rwidth = rows[y].length();
+            }
+        }
+
+        img = new char[Rheight][Rwidth];
+
+        for (int y = 0; y < Rheight; y++){
+            for (int x = 0; x < Rwidth; x++){
+                img[y][x] = ' ';                 
+            }
+            char[] charR = rows[y].toCharArray();
+            for (int x = 0; x < charR.length; x++){
+                img[y][x] = charR[x];            
+            }
+        }
+    }
+     void printImage(){
+         for (int y = 0; y < Rheight; y++) {
+            for (int x = 0; x < Rwidth; x++) {
+                System.out.print(img[y][x]);
+            }
+            System.out.println();
         }
     }
 
-    public static void bird(){
+       public static void main(String[] args){
+        for (int l = 0; l <= 10; l ++){
+        asciiArtProject initials = new asciiArtProject("Initials","Brady",initials());
+        initials.printImage();
+        asciiArtProject goat = new asciiArtProject("Goat","Brady",goat());
+        goat.printImage();
+        asciiArtProject bird = new asciiArtProject("Bird","Brady",bird());
+        bird.printImage();
+        }
+    }
+
+    public static char[][] bird() {
         int birdheight = 9;
         int birdlength = 29;
         char [][] img = new char[birdheight][birdlength];
@@ -21,7 +73,7 @@ public class asciiArtProject {
             }
         }
 
-                img[0][0] = '\\';
+        img[0][0] = '\\';
         img[0][1] = '\\';
         img[0][2] = '.';
         img[0][26] = '.';
@@ -132,16 +184,11 @@ public class asciiArtProject {
         img[8][15] = '\'';
         img[8][16] = '\'';
 
-        for (int y = 0; y < birdheight; y++) {
-            for (int x = 0; x < birdlength; x++) {
-                System.out.print(img[y][x]);
-            }
-            System.out.println();
-        }
+        return img;
 
     }
 
-    public static void goat(){
+    public static char[][] goat() {
         int goatheight = 19;
         int goatlength = 21;
         char[][] img = new char[goatheight][goatlength];
@@ -348,15 +395,9 @@ public class asciiArtProject {
         img[18][19] = 'M';
         img[18][20] = 'M';
 
-
-        for (int y = 0; y < goatheight; y++) {
-            for (int x = 0; x < goatlength; x++) {
-                System.out.print(img[y][x]);
-            }
-            System.out.println();
-        }
+        return img;
     }
-            public static void initials(){
+                  public static char[][] initials(){
         int initialsheight = 7;
         int initialslength = 9;
         char[][] img = new char[initialsheight][initialslength];
@@ -402,16 +443,8 @@ public class asciiArtProject {
         img[6][6] = '#';
         img[6][7] = '#';
         img[6][8] = '#';
-
-        for (int y = 0; y < initialsheight; y++) {
-            for (int x = 0; x < initialslength; x++) {
-                System.out.print(img[y][x]);
-            }
-            System.out.println();
-        }
+        return img;
     }
+
 }
-    //
-
-
-    
+  
